@@ -7,3 +7,9 @@
 
 [context.deploy-preview]
   command = "yarn build-preview"
+  
+[[redirects]]
+  from = "https:framelo.netlify.com/*"
+  to = "https://www.framelo.com/:splat"
+  status = 301
+  force = true #COMMENT: ensure that we always redirect
